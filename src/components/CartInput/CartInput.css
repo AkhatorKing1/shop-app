@@ -1,0 +1,124 @@
+.confirm-removal {
+    border-radius: 5px;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.confirm-removal::before {
+    content: "";
+    background-color: olivedrab;
+    border: 3px solid #2f352f;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.confirm-removal h3 {
+    font-size: 12px;
+}
+
+.confirm-removal button {
+    background-color: #2f352f;
+    color: olivedrab;
+    border: none;
+    padding: 5px;
+    width: 45px;
+
+    font-size: 10px;
+    font-weight: 500;
+}
+.confirm-removal button:hover {
+    background-color: olive;
+    color: #2f352f;
+    border: none;
+}
+
+#qty-div {
+    display: flex;
+    justify-content: center;
+}
+
+#qty-input {
+    text-align: right;
+    color: #2f352f;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+#qty-input:hover {
+    box-shadow: 0px 0px 0px 0.8px olive;
+    border: none;
+}
+#qty-input:focus {
+    box-shadow: 0px 0px 0px 2px olive;
+    border: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.item-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-name button {
+    padding: 5px;
+    padding-top: 0;
+}
+
+.item-name button:hover {
+    background-color: #2f352f;
+    border: 1px solid #dededf;
+}
+
+.item-name button #xlg {
+    color: olive;
+}
+
+@media (min-width: 768px) {
+    .item-name button {
+        margin-right: 30%;
+    }
+
+    .confirm-removal h3 {
+        font-size: 15px;
+    }
+
+    .confirm-removal button {
+        background-color: #2f352f;
+        color: olivedrab;
+        border: none;
+        padding: 5px;
+        width: 60px;
+
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .confirm-removal button:hover {
+        background-color: olive;
+        color: #2f352f;
+        border: none;
+    }
+
+    #qty-input {
+        width: 50%;
+    }
+}

@@ -1,0 +1,155 @@
+.form-and-cart-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 25px 0;
+    padding: 0 3vw 5px 5px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px olive;
+}
+
+#text-input {
+    background-color: #2f352f;
+    color: olive;
+    margin-bottom: 5px;
+}
+
+#text-input:focus,
+#text-input:hover {
+    box-shadow: 0px 0px 0px 3px olive;
+    border: none;
+}
+
+p {
+    margin: 0;
+}
+
+.checkbox-label {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkbox-label:hover {
+    background-color: olive;
+    padding: 0 3px 0 2px;
+    border-radius: 2px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    width: 1.15em;
+    height: 1.153em;
+    background-color: #2f352f;
+    border: 0.15em solid rgb(147, 146, 146);
+    border-radius: 0.15em;
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]:hover {
+    border: 2px solid olive;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 00.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em olive;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 80%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:checked {
+    border: 0.15em solid olive;
+}
+
+.cart-icon {
+    height: fit-content;
+    width: max-content;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    border-bottom: 1px solid olive;
+    border-radius: 50px;
+}
+
+.cart-icon:hover {
+    animation-name: cart-icon-btn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+#badge {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background-color: #2f352f;
+    border-radius: 50px;
+    color: #dededf;
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#badge p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@keyframes cart-icon-btn {
+    0% {
+        border-bottom: 1px solid olive;
+    }
+
+    35% {
+        border-bottom: 1.3px solid olive;
+        border-left: 1.3px solid olive;
+    }
+
+    70% {
+        border-bottom: 1.7px solid olive;
+        border-left: 1.7px solid olive;
+        border-top: 1.7px solid olive;
+    }
+
+    90% {
+        border: 2px solid olive;
+    }
+    100% {
+        border: 2px solid olive;
+    }
+}
+
+#cart-icon-btn {
+    border: none;
+    border-radius: 50px;
+    padding: 6px;
+}
+
+@media (min-width: 768px) {
+    .form-and-cart-icon {
+        padding: 0 15px 5px 5px;
+    }
+}
+
+.checkbox-label {
+    font-size: 14px;
+}

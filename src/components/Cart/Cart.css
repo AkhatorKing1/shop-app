@@ -1,0 +1,98 @@
+.cart-wrapper {
+    margin-top: 60px;
+    padding-bottom: 2.5vw;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cart-heading {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: olivedrab;
+    border-radius: 3px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 20px;
+}
+
+#empty-cart-p {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+.cart-table {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+@keyframes clearbtn {
+    from {
+        font-size: 13px;
+    }
+    to {
+        font-size: 15px;
+    }
+}
+
+#clear-btn {
+    background-color: #2f352f;
+    color: olivedrab;
+    border: none;
+    padding: 5px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#clear-btn:hover {
+    background-color: olive;
+    color: #2f352f;
+    border: none;
+    font-size: 15px;
+
+    animation-name: clearbtn;
+    animation-duration: 0.3s;
+}
+
+@keyframes orderbtn {
+    from {
+        font-size: 12px;
+    }
+    to {
+        font-size: 15px;
+    }
+}
+
+#order-btn {
+    background-color: black;
+    color: olivedrab;
+    border: none;
+
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#order-btn:hover {
+    background-color: olive;
+    color: #2f352f;
+    border: none;
+    font-size: 15px;
+
+    animation-name: orderbtn;
+    animation-duration: 0.3s;
+}
+
+@media (min-width: 768px) {
+    #empty-cart-p {
+        font-size: 16px;
+    }
+}

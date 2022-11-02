@@ -1,0 +1,144 @@
+.PO-wrapper {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+}
+
+#PO-heading {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: olivedrab;
+    border-radius: 3px;
+    padding: 2px 5px 2px 5px;
+}
+
+.date-and-table {
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 !important;
+}
+
+#all-dates {
+    /* background-color: green; */
+    padding: 0 5px 0 5px !important;
+}
+
+.date-div {
+    border-bottom: 1px solid black;
+    padding: 10px 0 10px 0px;
+    /* background-color: aquamarine; */
+}
+
+/* .container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+#date-div {
+    min-width: 30vw;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#date-div:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+#bigscreen-table {
+    position: absolute;
+    visibility: hidden;
+}
+
+.PO {
+    /* width: 65vw; */
+    height: fit-content;
+    padding: 5px;
+    border: 3px solid olive;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.app-title-wrapper {
+    margin: 5px 0 10px 2vw;
+}
+
+#app-title {
+    /* text-decoration: none; */
+    color: rgb(5, 50, 22);
+}
+.app-title-wrapper p {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 10px;
+    color: rgb(5, 50, 22);
+}
+
+#header {
+    background-color: olive;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.customer,
+.purchase {
+    margin-top: 10px;
+}
+
+.customer p,
+.purchase p {
+    padding: 5px 10px 5px 10px;
+}
+
+.PO table {
+    box-shadow: none;
+    margin-top: 10px;
+    /* border-collapse: separate; */
+}
+
+.PO table thead tr th {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+    background-color: olive;
+    /* border-collapse: separate; */
+}
+.PO table tbody tr:nth-child(odd) {
+    background-color: rgb(230, 230, 230);
+    /* background-color: rgb(129, 25, 25); */
+    /* border-collapse: collapse; */
+}
+.PO table tbody tr td {
+    border: none;
+}
+.PO table tfoot tr th {
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #smallscreen-table {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #bigscreen-table {
+        position: static;
+        visibility: visible;
+    }
+
+    .po-details {
+        display: flex;
+    }
+}
